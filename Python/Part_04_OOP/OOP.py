@@ -129,3 +129,40 @@ class Admin(Teacher):
 
 adm1 = Admin("Manager","maths")
 print(f"the star time is {adm1.start_time} and end time is {adm1.end_time} and teacher subject is {adm1.subject} and admin role is {adm1.role}")
+
+# -------------------  Multiple Inheritance -------------------
+
+class Employee1():
+    print("this is employee1 class")
+    def __init__(self,name,age):
+        self.name= name
+        self.age = age
+class Worker(Employee1):
+    print("this is worker class ")
+    def __init__(self,wage):
+        self.wage = wage
+    
+class CEO(Worker):
+    print("this is ceo class")
+    def __init__(self,name,age,wage,worth):
+        Employee1.name = name
+        Employee1.age =age
+        Worker.wage = wage
+        self.worth = worth
+
+ceo1 = CEO("nouman",23,26_000,5000_000)
+print(ceo1.name,ceo1.age,ceo1.wage,ceo1.worth)
+
+# +++++++++++++++ Abtraction ++++++++++++++
+from abc import ABC,abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+class Lion(Animal):
+    def make_sound(self):
+        print("Roar!!")
+
+lion = Lion()
+lion.make_sound()
