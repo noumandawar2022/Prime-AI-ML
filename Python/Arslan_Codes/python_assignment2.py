@@ -30,6 +30,7 @@
 
 
 # #Q3. print digits of a number
+
 # def print_digits(n):
 
     #USING LOOP TO REVERSE

@@ -245,7 +245,7 @@ p1.info()
 
 '''
 #  ======================== Question 9 =================
-
+'''
 class Herbivore:
     def __init__(self,h_name,age,weight):
         self.h_name = h_name
@@ -288,3 +288,6 @@ class Bear(Herbivore,Carnivore,Omnivore):
 
 b1 = Bear("a",30,300,"b",50,30,"c",30,20,"d")
 b1.show()
+
+'''
+
