@@ -112,3 +112,7 @@ nums = [1,-4,6,2,-9,-5,4,-7]
 print(nums)
 nums = [ 0 if val<0  else val for val in nums]
 print(nums)
+
+
+
+
