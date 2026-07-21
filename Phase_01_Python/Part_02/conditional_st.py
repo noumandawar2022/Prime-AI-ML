@@ -33,8 +33,23 @@
 
 # Odd or Even
 
-a = int(input("Enter the value: "))
-if ( a%2 ==0 ):
-    print("it is even number.")
-else:
-    print("it is odd number")
+# a = int(input("Enter the value: "))
+# if ( a%2 ==0 ):
+#     print("it is even number.")
+# else:
+#     print("it is odd number")
+
+
+age = int(input("enter your age: "))
+
+match age:
+    case age if age > 0 and age < 18:
+        print("you are teenage of 12 years.")
+    case 18:
+        print("you are an adult of 18 years.")
+    case age if age > 17  and age < 25:
+        print("you are eligiable for mariage.")
+    case 22:
+        print("you are an adult of 22 years.")
+    case _:
+        print("you are out of the  years.")
